@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+ <title>Mi hoja de vida</title>
+ <meta charset="utf-8">
+ <meta name="description" content="Esta es mi hoja de vida en HTML
+ Diseñada con etiquetas estructurales (cabecera, navegación,
+ Imagen, secciones y pie de página">
+ <meta name="keyworks" content="HTML, CSS, JavaScript, curriculum">
+ <link rel="icon" href="imagenes/icono_web1.png" type="image/png"
+ sizes="20x20">
+ <link rel="stylesheet" type="text/css" href="css/estilo.css">
+ </head>
+ <body>
+<header>
+<figure>
+ <img src="imagenes/juanmanuel.jpg"
+ alt="Foto HV"
+ title="Foto HV" height="150"> 
+ </figure> 
+ <div id="titulo">
+ <p>Hoja de Vida</p> 
+ </div> 
+ <div id="subtitulo">
+ <p>Juan Manuel Daz Fierro</p> 
+ </div> 
+ </header>
+<nav>
+ <ul>
+ <li><a href="index.html">Inicio</a></li>
+ <li><a href="misestudios.html">Mis Estudios</a></li>
+ <li><a href="miexperiencia.html">Mi Experiencia</a></li>
+ </ul>
+</nav>
+<div class="contenedor">
+  <form id="Form" action="">
+    <div class="form-header">
+      <h1 class="form-title">C<span>ontacto</span></h1>
+    </div>
+    <label for="nombre" class="form-label">Nombres:</label>
+    <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre">
+  
+    <label for="direccion" class="form-label">Dirección:</label>
+    <input type="text" class="form-input" id="direccion" placeholder="Escriba su dirección">
+  
+    <label for="correo" class="form-label">Correo Electronico:</label>
+    <input type="email" class="form-input" id="correo" placeholder="Escriba su correo">
+  
+    <label for="mensaje" class="form-label">Mensaje:</label>
+    <textarea id="mensaje" class="form-textarea" placeholder="Aquí escriba su mensaje"></textarea>
+<p>
+    <label for="nacionalidad" class="form-label"><h3>Tipo de ingresos</h3></label>
+
+    <input type="checkbox" name="peliculas"><h4>Empleo</h4><br>
+
+    <input type="checkbox" name="deportes"><h4>Herencia</h4><br>
+
+    <input type="checkbox" name="videojuegos"><h4>Inverciones</h4></p><br>
+
+    <label for="start">Fecha de nacimiento:</label>
+
+<input type="date" id="start" name="Fecha de nacimiento"
+       value="2000-07-22"
+       min="1900-01-01" max="2022-12-31"><br>
+
+    <label for="Genero" class="form-label">Genero:</label>
+
+    <input type="radio" name="Genero" value="Masculino"> Masculino
+
+    <input type="radio" name="Genero" value="Femenino"> Femenino
+
+    <input type="radio" name="Genero" value="Otro"> Otro<br>
+
+      <label for="recidencia" class="form-label">Lugar de recidencia:</label><br>
+      <select name="recidencia">
+  
+        <option>Colombia</option>
+  
+        <option>U.s.a</option>
+
+        <option>Otro</option><br>
+  
+  
+      </select><br>
+
+  
+    <input type="submit" class="btn-submit" value="Enviar consulta" id="boton">
+
+    
+  </form>
+</div>
